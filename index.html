@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar">
+        <div class = "main">
+            <div id="navLeft">
+                <div class="content">
+                    <h1>Profile</h1>
+                </div>
+                <div class = "content">
+                    <ul id = "pageLinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">Find Connections</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div id="navRight">
+                <button id="signOut">Sign Out</button>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="main">
+        <div id= "mainLeft">
+            <div class="wideRect">
+                <div id = "cardRect"></div>
+                <div id = "cardContent">
+                    <i id = "face" ><img src="user-circle.png"></i>
+                    <h1 id = "name">Kevin McGrath</h1>
+                    <h2><i><img src ="map-marker.png" ></i>Chicago</h2><!--may have to go in  a div-->
+                    <h2>Artist | Software Devevoloper | Judoka | Logician | Weirdo</h2>
+                    <h2 id = "parent">
+                        <i><img src = "gear.png"></i>
+                        <a id = "replaceMe" href="#" onclick="textInput(this)">edit profile</a>
+                     </h2>
+                     <!-- <input id="input1" type ="text" oninput = "changeHeader(this)">
+                     <h3 id = "header">My name is header</h3> -->
+                </div>
+            </div>
+            <div class ="wideRect">
+                <div class = "title">
+                    <h2>Education</h2>
+                </div>
+                <div class = "filler">
+                    <h3>Coding Dojo - Software Development Bootcamp</h3>
+                    <h3>Dec 2019-Mar 2020</h3>
+                    <p>I have just started the bootcamp, but I am very excited.</p>
+                </div>
+
+
+    
+            </div>
+        </div>
+        <div id="mainRight">
+            <div class="narrowRect">
+                <div class = "title">
+                    <div class = "circleLabel"><!--display inline  block-->
+                        <p id = "circleLabel-1">2</p>
+                    </div>
+                    <h2>Connection Requests</h2>
+                </div>
+                <div class = connectList>
+                    <ul>
+                        <li>
+                            <div>
+                                <img class = "peeps" src = "user-circle.png" ><span>Todd E</span>
+                            </div> 
+                            <div>
+                                <img class = "circles" src ="accept-circle.png"><img class = "circles" src = "close-circle.png" >
+                            </div>
+                        </li><!--needs to be list-style none-->
+                        <li>
+                            <div><img class = "peeps" src = "user-circle.png" ><span>Todd E</span></div> 
+                            <div><img class = "circles" src ="accept-circle.png"><img class = "circles" src = "close-circle.png" >
+                            </div>
+                        </li>  
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="narrowRect">
+                <div class = "title">
+                    <div class = "circleLabel"><!--display inline  block-->
+                        <p id = "circlelabel-2">2</p>
+                    </div>
+                    <h2>Your Connections</h2>
+                </div>
+                <div class = connectList>
+                    <ul>
+                        <li>
+                            <div><img class = "peeps" src = "user-circle.png" ><span>Phil J</span></div>
+                        </li>
+                        <li>
+                            <div><img class = "peeps" src = "user-circle.png" ><span>Alexandra S</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="linkBorder">
+
+                    <div class = "connectList">
+                        <a href="#">View More</a>
+                    </div>
+
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
